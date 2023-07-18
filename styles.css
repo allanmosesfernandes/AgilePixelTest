@@ -4,6 +4,7 @@
   --base-black: #000;
   --base-orange: #f9a600;
   --link-gray: #b3b3b3;
+  --link-hover: #d1d5db;
   --lg-font: 3rem;
   --md-font: 2rem;
   --sm-font: 1rem;
@@ -49,9 +50,9 @@ a {
   bottom: 0;
   position: fixed;
   bottom: 0;
-  left: 0;
-  transform-origin: top left;
-  transform: translateY(100%) rotate(-90deg);
+  right: 0;
+  transform-origin: top right;
+  transform: translate(-270%, 62%) rotate(-90deg);
 }
 
 .link {
@@ -59,8 +60,11 @@ a {
   font-size: var(--lg-font);
   text-transform: uppercase;
   font-size: 5rem;
+  transition: hover 0.3s ease-in-out;
 }
-
+.link:hover {
+  color: var(--link-hover);
+}
 .container {
   max-width: 1440px;
   display: flex;
